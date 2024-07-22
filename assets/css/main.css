@@ -2202,6 +2202,7 @@ input, select, textarea {
 					margin-left: 0;
 				}
 
+
 /* Main */
 
 	#main {
@@ -2288,7 +2289,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				margin-left: 300px;
+				margin-left: 100px;
 			}
 
 	}
@@ -2630,4 +2631,22 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
+	}
+
+	.flex-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	/* Text content styling */
+	.text-content {
+		flex: 1;
+	}
+	
+	/* CSS for the right-side image */
+	.right-image {
+		max-width: 300px; /* Adjust as needed */
+		height: auto;
+		margin-left: 20px;
 	}
