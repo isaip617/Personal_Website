@@ -2289,7 +2289,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				margin-left: 150px;
+				margin-left: 300px;
 			}
 
 	}
@@ -2699,12 +2699,12 @@ input, select, textarea {
 .experience-section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .experience-section h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .experience {
@@ -2748,8 +2748,8 @@ input, select, textarea {
 }
 
 .skills span {
-    background-color: #21262d;
-	color: #ef91a1;
+    background-color: #5d5f62;
+	color: #f08d9e;
     padding: 0.3rem 0.6rem;
     border-radius: 12px;
     margin-right: 0.5rem;
