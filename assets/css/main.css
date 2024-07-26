@@ -2650,51 +2650,86 @@ input, select, textarea {
 		height: auto;
 		margin-left: 20px;
 	}
+	#projects {
+		text-align: center;
+		padding-left: 20px;  /* Add some padding to the left and right */
+		padding-right: 20px;
+	}
+	
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5px;
+		justify-items: center;
+		align-items: center;
+	}
+	
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.gallery-item img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.project_title {
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	
+	.caption {
+		font-size: small;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 5px;
+		margin-top: 10px;
+		display: inline-block;
+		width: 150%;
+		text-align: left;
+		align-self: center;
+	}
+	
+	.gallery-item:nth-child(1) {
+		grid-column: 2 / 3;
+		grid-row: 1;
+	}
+	
+	.gallery-item:nth-child(2) {
+		grid-column: 1 / 2;
+		grid-row: 2;
+	}
+	
+	.gallery-item:nth-child(3) {
+		grid-column: 3 / 4;
+		grid-row: 2;
+	}
+/* Media query for narrower screens */
+/* Media query for narrower screens */
+@media (max-width: 768px) {
 
-#projects {
-	text-align: center;
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 70%;
+		margin-bottom: 40px;
+		margin-right: 40px;
+		margin-left: 40px;
+		gap: 10px;
+	}
 }
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-	justify-items: center;
-}
-.gallery-item {
-	text-align: center;
-	position: relative;
-}
-.gallery-item img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-.project_title {
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-.caption {
-	background-color: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	padding: 5px 10px;
-	border-radius: 5px;
-	margin-top: 10px;
-	display: inline-block;
-}
-.gallery-item:nth-child(1) {
-	grid-column: 2 / 3;
-	grid-row: 1;
-}
-.gallery-item:nth-child(2) {
-	grid-column: 1 / 2;
-	grid-row: 2;
-}
-.gallery-item:nth-child(3) {
-	grid-column: 3 / 4;
-	grid-row: 2;
-}
-
-
+	
+	
 
 .experience-section {
     max-width: 800px;
@@ -2807,7 +2842,7 @@ input, select, textarea {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	background-color: #333;
 	width: 100%; /* Ensure full width */
 	
